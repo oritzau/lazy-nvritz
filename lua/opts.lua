@@ -1,0 +1,33 @@
+local opt = vim.opt
+local cmd = vim.api.nvim_command
+
+cmd("colorscheme gruvbox")
+opt.syntax = "ON"
+opt.termguicolors = true
+vim.cmd([[highlight Normal guibg=none]])
+vim.cmd([[highlight NonText guibg=none]])
+
+opt.number = true
+opt.relativenumber = true
+opt.scrolloff = 8
+
+opt.encoding = "utf8"
+opt.fileencoding = "utf8"
+
+opt.ignorecase = true
+opt.smartcase = true
+opt.incsearch = true
+opt.hlsearch = false
+
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.softtabstop = 4
+opt.tabstop = 4
+
+opt.splitright = true
+opt.splitbelow = true
+
+opt.clipboard = "unnamedplus"
+
+opt.updatetime = 50
+-- opt.guicursor = ""

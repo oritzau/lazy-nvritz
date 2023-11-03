@@ -1,0 +1,4 @@
+Transparent background
+Bufferline? (might give up)
+Window tiling
+See it there is a noticeable change in loadtime/speed, might switch main to this
