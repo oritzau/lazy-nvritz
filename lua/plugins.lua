@@ -20,6 +20,15 @@ return {
         opts = {}
     },
 
+    -- bufferline
+
+    {
+        "akinsho/bufferline.nvim", 
+        config = true,
+        version = "*", 
+        dependencies = "nvim-tree/nvim-web-devicons"
+    },
+
 	-- nvim-tree
 	{
 		"nvim-tree/nvim-tree.lua",
