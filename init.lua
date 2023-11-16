@@ -18,3 +18,9 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 require("lazy").setup("plugins")
 require("opts")
+
+-- vimtex
+vim.g.vimtex_view_method = "zathura"
+vim.g.vimtex_view_forward_search_on_start = false
+
+

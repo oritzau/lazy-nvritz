@@ -13,6 +13,7 @@ map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
 
 map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+map("n", "<C-\\>", ":ToggleTerm<CR>", opts)
 
 map("n", "<Tab>", ":bnext<CR>", opts)
 map("n", "<S-Tab>", ":bprevious<CR>", opts)
