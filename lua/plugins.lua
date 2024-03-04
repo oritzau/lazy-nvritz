@@ -20,6 +20,14 @@ return {
         opts = {}
     },
 
+    -- bufferline
+    {
+        "akinsho/bufferline.nvim", 
+        config = true,
+        version = "*", 
+        dependencies = "nvim-tree/nvim-web-devicons"
+    },
+
 	-- nvim-tree
 	{
 		"nvim-tree/nvim-tree.lua",
@@ -135,5 +143,22 @@ return {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.4",
         dependencies = { "nvim-lua/plenary.nvim" }
-    }
+    },
+
+    -- vimtex
+    {
+        "lervag/vimtex",
+        lazy = false,
+    },
+
+	-- markdown-preview
+	{
+	  "iamcco/markdown-preview.nvim",
+	  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+	  build = "cd app && yarn install",
+	  init = function()
+		vim.g.mkdp_filetypes = { "markdown" }
+	  end,
+	  ft = { "markdown" },
+	},
 }

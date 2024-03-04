@@ -19,7 +19,6 @@ opt.smartcase = true
 opt.incsearch = true
 opt.hlsearch = false
 
-opt.expandtab = true
 opt.shiftwidth = 4
 opt.softtabstop = 4
 opt.tabstop = 4

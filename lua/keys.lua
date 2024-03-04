@@ -13,6 +13,10 @@ map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
 
 map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+map("n", "<leader>cr", ":BufferLineCloseRight<CR>", opts)
+map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", opts)
+
+map("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<CR>", opts)
 
 map("n", "<Tab>", ":bnext<CR>", opts)
 map("n", "<S-Tab>", ":bprevious<CR>", opts)
