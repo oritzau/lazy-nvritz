@@ -29,4 +29,4 @@ opt.splitbelow = true
 opt.clipboard = "unnamedplus"
 
 opt.updatetime = 50
--- opt.guicursor = ""
+opt.guicursor = ""
