@@ -18,9 +18,10 @@ vim.g.mapleader = "<space>"
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-require("lazy").setup("plugins")
-require("luasnip.loaders.from_vscode").lazy_load()
 require("opts")
+require("lazy").setup("plugins")
+vim.api.nvim_command("colorscheme gruvbox")
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- for vimtex
 vim.g.vimtex_compiler_method = "latexmk"

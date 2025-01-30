@@ -2,7 +2,6 @@ local opt = vim.opt
 local cmd = vim.api.nvim_command
 
 vim.o.background = "dark"
-cmd("colorscheme gruvbox")
 opt.syntax = "ON"
 opt.termguicolors = true
 vim.cmd([[highlight Normal guibg=none]])
@@ -21,7 +20,7 @@ opt.smartcase = true
 opt.incsearch = true
 opt.hlsearch = false
 
-opt.shiftwidth = 2
+opt.shiftwidth = 0
 opt.softtabstop = 2
 opt.tabstop = 2
 opt.expandtab = true
