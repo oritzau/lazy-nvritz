@@ -1,11 +1,13 @@
 local opt = vim.opt
 local cmd = vim.api.nvim_command
 
+vim.o.background = "dark"
 cmd("colorscheme gruvbox")
 opt.syntax = "ON"
 opt.termguicolors = true
 vim.cmd([[highlight Normal guibg=none]])
 vim.cmd([[highlight NonText guibg=none]])
+vim.cmd("set signcolumn=number")
 
 opt.number = true
 opt.relativenumber = true
