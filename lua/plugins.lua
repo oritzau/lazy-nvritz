@@ -17,7 +17,7 @@ return {
         italic = {
           strings = false,
           emphasis = true,
-          comments = true,
+          comments = false,
           operators = false,
           folds = true,
         },
@@ -31,7 +31,7 @@ return {
         palette_overrides = {},
         overrides = {},
         dim_inactive = false,
-        transparent_mode = false,
+        transparent_mode = true,
       })
     end,
   },
