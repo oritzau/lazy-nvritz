@@ -21,14 +21,13 @@ opt.incsearch = true
 opt.hlsearch = false
 
 opt.shiftwidth = 0
-opt.softtabstop = 2
-opt.tabstop = 2
+opt.softtabstop = 4
+opt.tabstop = 4
 opt.expandtab = true
 
 opt.splitright = true
 opt.splitbelow = true
 
-opt.clipboard = "unnamedplus"
-
 opt.updatetime = 50
-opt.guicursor = ""
+-- opt.guicursor = ""
+opt.winborder = "rounded"

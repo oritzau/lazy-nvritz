@@ -18,7 +18,14 @@ map("n", "<leader>cl", ":BufferLineCloseLeft<CR>", opts)
 
 map("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<CR>", opts)
 
-map("n", "<Tab>", ":bnext<CR>", opts)
-map("n", "<S-Tab>", ":bprevious<CR>", opts)
+-- map("n", "<Tab>", ":bnext<CR>", opts)
+-- map("n", "<S-Tab>", ":bprevious<CR>", opts)
+for i = 1, 9 do
+  vim.keymap.set("n", "<leader>" .. i, function()
+    require("bufferline").go_to_buffer(i, true)
+  end, { desc = "Go to buffer " .. i })
+end
+
 
 map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+map("n", "<leader>sf", ":Telescope live_grep<CR>", opts)
